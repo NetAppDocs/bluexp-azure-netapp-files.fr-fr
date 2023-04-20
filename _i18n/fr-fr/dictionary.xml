@@ -7,7 +7,6 @@
   <block id="86431e70f2e01436434235b95f27507f" category="list-text">Plusieurs tiers de performance permettent un alignement étroit avec les exigences de performances des charges de travail.</block>
   <block id="0f5101975c831a1a6350155e818d4cbf" category="list-text">Les certifications comme SAP HANA, le RGPD et HIPAA permettent la migration des workloads les plus exigeants vers Azure.</block>
   <block id="6a7ebeee8a870484e91de7ed605595e5" category="section-title">Fonctions supplémentaires dans BlueXP</block>
-  <block id="7d80851a767857c9d6f9bdd94c3d031e" category="list-text">Migrez des données NFS ou SMB vers Azure NetApp Files directement depuis BlueXP (anciennement Cloud Manager). Les migrations de données sont optimisées par le service Cloud Sync de NetApp.</block>
   <block id="c9e8b2e7aec1baa65efcbe84dfc9d0ed" category="inline-link">En savoir plus sur Cloud Sync</block>
   <block id="707476b7ceb8bcfdb9c13e59859ae97a" category="paragraph"><block ref="707476b7ceb8bcfdb9c13e59859ae97a" category="inline-link-rx"></block></block>
   <block id="25c46bef01bcfa77e5905b1d3308762a" category="list-text">Avec la technologie d'intelligence artificielle (IA), Cloud Data Sense peut vous aider à comprendre le contexte des données et à identifier les données sensibles qui résident sur vos comptes Azure NetApp Files.</block>
@@ -118,7 +117,6 @@
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp prend en charge BlueXP et ses services cloud de différentes manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Base de connaissances</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">Recherchez dans la base de connaissances BlueXP des articles utiles pour résoudre les problèmes.</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Communautés</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
@@ -439,4 +437,6 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Pièce jointe (facultatif)* : téléchargez jusqu'à cinq pièces jointes, une à la fois.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichier suivantes sont prises en charge : txt, log, PDF, jpg/JPEG, rtf, doc/docx, xls/xlsx et csv.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème ou sélectionner *Télécharger les fichiers* pour joindre jusqu'à cinq fichiers.</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="6ecf0fff968ff9d17f1f524f90c9a9fe" category="list-text">Migrez vos données NFS ou SMB vers Azure NetApp Files directement à partir de BlueXP. Les migrations de données sont optimisées par le service Cloud Sync de NetApp.</block>
 </blocks>
