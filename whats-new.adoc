@@ -70,4 +70,4 @@ La possibilité de créer et de gérer Azure NetApp Files directement à partir 
 
 === Migration des données vers Azure NetApp Files
 
-Vous pouvez désormais migrer des données NFS ou SMB vers Azure NetApp Files directement depuis Cloud Manager. La synchronisation des données est optimisée par le service Cloud Sync de NetApp.
+Vous pouvez désormais migrer des données NFS ou SMB vers Azure NetApp Files directement depuis Cloud Manager. Les données synchronisées sont optimisées par la copie et la synchronisation BlueXP.
