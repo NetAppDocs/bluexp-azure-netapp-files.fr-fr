@@ -18,7 +18,7 @@ BlueXP a besoin d'autorisations pour configurer et gérer Azure NetApp Files. Vo
 
 
 
-== Créez l'application AD
+== Étape 1 : créez l'application AD
 
 Créez une application et une entité de service Azure AD que BlueXP peut utiliser pour le contrôle d'accès basé sur des rôles.
 
@@ -69,7 +69,7 @@ Votre application AD est maintenant configurée et vous devez avoir copié l'ID 
 
 
 
-== Attribuez l'application à un rôle
+== Étape 2 : attribuez l'application à un rôle
 
 Vous devez lier l'entité de service à votre abonnement Azure et lui attribuer un rôle personnalisé qui dispose des autorisations requises.
 
@@ -137,7 +137,7 @@ Le service principal pour BlueXP dispose désormais des autorisations Azure requ
 
 
 
-== Ajoutez les identifiants à BlueXP
+== Étape 3 : ajoutez les identifiants à BlueXP
 
 Lorsque vous créez l'environnement de travail Azure NetApp Files, vous êtes invité à sélectionner les informations d'identification associées à l'entité de service. Vous devez ajouter ces informations d'identification à BlueXP avant de créer l'environnement de travail.
 
@@ -155,7 +155,7 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 *** ID de l'application (client)
 *** ID du répertoire (locataire)
 +
-Vous devez avoir saisi ces informations lorsque vous <<Créez l'application AD,Créé l'application AD>>.
+Vous devez avoir saisi ces informations lorsque vous <<Create the AD application,Créé l'application AD>>.
 
 
 
