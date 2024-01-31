@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-set-up-azure-ad.html 
 keywords: azure netapp files, azure netapp files permissions, azure permissions, active directory, application, ad application, ad app, app, service principal 
-summary: 'BlueXP a besoin d"autorisations pour configurer et gérer Azure NetApp Files. Vous pouvez accorder les autorisations requises à un compte Azure en créant et en configurant une application Azure Active Directory et en obtenant les informations d"identification Azure requises par BlueXP.' 
+summary: 'BlueXP a besoin d"autorisations pour configurer et gérer Azure NetApp Files. Vous pouvez accorder les autorisations requises à un compte Azure en créant et en configurant une application Microsoft Entra et en obtenant les informations d"identification Azure requises par BlueXP.' 
 ---
-= Configurez une application Azure AD
+= Configurez une application Microsoft Entra
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: 'BlueXP a besoin d"autorisations pour configurer et gérer Azure NetApp
 
 
 [role="lead"]
-BlueXP a besoin d'autorisations pour configurer et gérer Azure NetApp Files. Vous pouvez accorder les autorisations requises à un compte Azure en créant et en configurant une application Azure Active Directory (AD) et en obtenant les informations d'identification Azure requises par BlueXP.
+BlueXP a besoin d'autorisations pour configurer et gérer Azure NetApp Files. Vous pouvez accorder les autorisations requises à un compte Azure en créant et en configurant une application Microsoft Entra et en obtenant les informations d'identification Azure requises par BlueXP.
 
 
 
-== Étape 1 : créez l'application AD
+== Étape 1 : créer l'application
 
-Créez une application et une entité de service Azure AD que BlueXP peut utiliser pour le contrôle d'accès basé sur des rôles.
+Créez une application et un principal de service Microsoft Entra que BlueXP peut utiliser pour le contrôle d'accès basé sur des rôles.
 
 .Avant de commencer
 Vous devez disposer des droits d'accès dans Azure pour créer une application Active Directory et attribuer l'application à un rôle. Pour plus de détails, reportez-vous à https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentation Microsoft Azure : autorisations requises"^].
 
 .Étapes
-. À partir du portail Azure, ouvrez le service *Azure Active Directory*.
+. À partir du portail Azure, ouvrez le service *Microsoft Entra ID*.
 +
-image:screenshot_azure_ad.gif["Capture d'écran présentant le service Active Directory dans Microsoft Azure."]
+image:screenshot_azure_ad.png["Capture d'écran présentant le service Active Directory dans Microsoft Azure."]
 
 . Dans le menu, cliquez sur *enregistrements d'applications*.
 . Créez l'application :
@@ -46,19 +46,19 @@ image:screenshot_azure_ad.gif["Capture d'écran présentant le service Active Di
 
 . Copiez l'ID *application (client)* et l'ID *Directory (tenant)*.
 +
-image:screenshot_anf_app_ids.gif["Capture d'écran affichant l'ID de l'application (client) et l'ID du répertoire (tenant) d'une application dans Azure Active Directory."]
+image:screenshot_anf_app_ids.gif["Capture d'écran affichant l'ID de l'application (client) et l'ID du répertoire (locataire) d'une application dans Microsoft Entra ID."]
 
 +
 Lorsque vous créez l'environnement de travail Azure NetApp Files dans BlueXP, vous devez fournir l'ID d'application (client) et l'ID de répertoire (tenant) de l'application. BlueXP utilise les ID pour se connecter par programmation.
 
-. Créez un secret client pour l'application afin que BlueXP puisse l'utiliser pour s'authentifier auprès d'Azure AD :
+. Créez un secret client pour l'application afin que BlueXP puisse l'utiliser pour s'authentifier auprès de Microsoft Entra ID :
 +
 .. Cliquez sur *certificats et secrets > Nouveau secret client*.
 .. Fournissez une description du secret et une durée.
 .. Cliquez sur *Ajouter*.
 .. Copier la valeur du secret client.
 +
-image:screenshot_anf_client_secret.gif["Copie d'écran du portail Azure présentant un secret client pour la principale du service Azure AD."]
+image:screenshot_anf_client_secret.gif["Capture d'écran du portail Azure montrant un secret client pour le principal de service Microsoft Entra."]
 
 
 
@@ -149,7 +149,7 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 . Cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
 +
 .. *Emplacement des informations d'identification* : sélectionnez *Microsoft Azure > BlueXP*.
-.. *Définir les informations d'identification* : saisissez des informations sur l'entité principale du service Azure Active Directory qui accorde les autorisations requises :
+.. *Définir les informations d'identification* : saisissez les informations relatives à l'entité de service Microsoft Entra qui accorde les autorisations requises :
 +
 *** Secret client
 *** ID de l'application (client)
