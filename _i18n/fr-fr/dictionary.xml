@@ -48,7 +48,6 @@
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">Ces numéros de série sont généralement appelés _PAYGO - numéros de série_ et sont générés par BlueXP au moment du déploiement de Cloud Volumes ONTAP.</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si vous avez un compte au niveau du client, vous pouvez ajouter un ou plusieurs comptes NSS.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Capture d'écran du menu aide où support est la première option répertoriée</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utilise Microsoft Azure Active Directory comme fournisseur d'identités pour les services d'authentification spécifiques au support et aux licences.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Sur la page de connexion, indiquez l'adresse e-mail et le mot de passe que vous avez enregistrés sur le site de support NetApp pour réaliser le processus d'authentification.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Ces actions permettent à BlueXP d'utiliser votre compte NSS pour des opérations telles que le téléchargement de licences, la vérification de la mise à niveau logicielle et les inscriptions de support futures.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Notez ce qui suit :</block>
@@ -99,8 +98,6 @@
   <block id="af08318aa95b670c097bf944ab12d208" category="summary">Une fois l'environnement de travail configuré, vous pouvez créer des comptes Azure NetApp Files, des pools de capacité et des volumes.</block>
   <block id="1c27e11c5e65b93611e6f5ce640f8184" category="section-title">Créer des volumes</block>
   <block id="15b71829402124199d38fc483f8a71b5" category="paragraph">Vous pouvez créer des volumes NFS ou SMB dans un compte Azure NetApp Files existant ou nouveau.</block>
-  <block id="efc4120a3fbfbea33245fb931c324492" category="inline-xref">procédure à suivre</block>
-  <block id="890592abc0c43fcc710edb1dbdeaf2b3" category="paragraph">La fonction BlueXP appelée « modèles » vous permet de créer des volumes optimisés pour les besoins de charge de travail de certaines applications, comme les bases de données ou les services de diffusion en continu. Si votre organisation a créé des modèles de volume que vous devez utiliser, suivez la procédure ci-dessous <block ref="841f2986c591e442944fbc4b9e18c81f" category="inline-xref-macro-rx"></block>.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">Avant de commencer</block>
   <block id="871a29db0a928b46295d82cee2357c13" category="list-text">Si vous souhaitez utiliser SMB, vous devez avoir configuré DNS et Active Directory.</block>
   <block id="943219d5074bb5ad25a6a5caf2ffdd2a" category="list-text">Lorsque vous prévoyez de créer un volume SMB, vous devez disposer d'un serveur Windows Active Directory disponible auquel vous pouvez vous connecter. Vous entrez ces informations lors de la création du volume.</block>
@@ -126,27 +123,6 @@
   <block id="45dbe3c136df615d693b80183c277a3b" category="paragraph">Le nouveau volume est ajouté à l'environnement de travail.</block>
   <block id="eaae7feedfb57c4ccdcc53c186726c56" category="inline-xref">montage du volume cloud</block>
   <block id="2f8952d0a4fb138ef90f78fb9a50fe88" category="paragraph">Passez à <block ref="b0f2178360372267ad19e1e8e4741e99" category="inline-xref-macro-rx"></block>.</block>
-  <block id="a37f6000ecd62b3a2058de32fa603d0a" category="section-title">Créer des volumes à partir de modèles</block>
-  <block id="4a856903cf54bbb57bd5703d54583103" category="paragraph">Si votre entreprise a créé des modèles de volume Azure NetApp Files afin de pouvoir déployer des volumes optimisés pour répondre aux besoins de workloads de certaines applications, suivez les étapes de cette section.</block>
-  <block id="8d69897f39fda1e4779ad2d9ff4939c4" category="paragraph">Le modèle devrait faciliter votre travail car certains paramètres de volume seront déjà définis dans le modèle, tels que le pool de capacité, la taille, le protocole, VNet et le sous-réseau où le volume doit résider, etc. Lorsqu'un paramètre est déjà prédéfini, il vous suffit de passer au paramètre de volume suivant.</block>
-  <block id="f1a38681016ccf53a8d2c2fad98c7db2" category="list-text">Sur la page Canevas, cliquez sur l'environnement de travail Azure NetApp Files dans lequel vous souhaitez provisionner un volume.</block>
-  <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">Bouton plus</block>
-  <block id="f96393c48de5eddb1a2818124e9040b6" category="list-text">Cliquez sur <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> &gt; *Ajouter un volume à partir du modèle*.</block>
-  <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">Capture d'écran indiquant comment ajouter un nouveau volume à partir d'un modèle.</block>
-  <block id="098587c5859901ecc32e7a709cb2129f" category="paragraph"><block ref="098587c5859901ecc32e7a709cb2129f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">Dans la page _Select Template_, sélectionnez le modèle à utiliser pour créer le volume et cliquez sur *Next*.</block>
-  <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">Capture d'écran des modèles d'application disponibles.</block>
-  <block id="e9be4d5050c4e00aff6426b7045f1b6a" category="paragraph"><block ref="e9be4d5050c4e00aff6426b7045f1b6a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8675916eaff2fb10955e8a3b1b14108f" category="paragraph">La page _Define Parameters_ s'affiche.</block>
-  <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">Capture d'écran montrant un modèle vierge que vous devez remplir pour créer un volume.</block>
-  <block id="93fdd25da4e72c932b99d601b637202f" category="paragraph"><block ref="93fdd25da4e72c932b99d601b637202f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="31f425aaa6a26f3fc5e635704753602f" category="paragraph">*Remarque :* vous pouvez cliquer sur la case *Afficher les paramètres en lecture seule* pour afficher tous les champs qui ont été verrouillés par le modèle si vous voulez voir les valeurs de ces paramètres. Par défaut, ces champs prédéfinis sont masqués et seuls les champs à compléter sont affichés.</block>
-  <block id="2bc51d1d472e80f2611fe5ff280c4ebe" category="list-text">Cliquez sur *Exécuter le modèle* après avoir défini tous les paramètres requis pour ce volume.</block>
-  <block id="71fe7750eaf8ad346bfa5f8d17e350aa" category="paragraph">BlueXP provisionne le volume et affiche une page pour vous permettre de voir la progression.</block>
-  <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">Capture d'écran indiquant la progression de la création de votre nouveau volume à partir du modèle.</block>
-  <block id="4ad07dd99a58c5fa556826f4f972a56e" category="paragraph"><block ref="4ad07dd99a58c5fa556826f4f972a56e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3fcf4599fd910141dcd628a7411238d5" category="paragraph">Ensuite, le nouveau volume est ajouté à l'environnement de travail.</block>
-  <block id="0753d577f87c3ce7385e295a5cc23407" category="paragraph">Poursuivre le montage du volume cloud.</block>
   <block id="2a4a19d3d732c5f7aa35fa729ac0d8ac" category="section-title">Montez les volumes</block>
   <block id="cabcbbac4437e0dbf2eec9f1d07d973b" category="paragraph">Accédez aux instructions de montage depuis BlueXP pour monter le volume sur un hôte.</block>
   <block id="6c970f68c7cf5a446d127ac3ab6d72f7" category="list-text">Ouvrir l'environnement de travail.</block>
@@ -387,8 +363,6 @@
   <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">Modifiez les colonnes qui apparaissent dans le tableau en sélectionnant <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> puis choisissez les colonnes que vous souhaitez afficher.</block>
   <block id="348552521b849746260fe8d296d34c15" category="list-text">Gérer un dossier existant en sélectionnant <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> et en sélectionnant l'une des options disponibles :</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et sélectionnez *Fermer le cas*.</block>
-  <block id="2ed978d3284ec9503be973d54abd5507" category="inline-xref">créer des volumes</block>
-  <block id="d3685c976ba0d8be55399dcb8023edd0" category="list-text">Ajoutez des valeurs pour tous les paramètres qui ne sont pas codés en dur à partir du modèle. Voir <block ref="94c7da97446a939ca89601c141819f83" category="inline-xref-macro-rx"></block> Pour obtenir des informations détaillées sur les paramètres requis pour déployer un volume Azure NetApp Files,</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -431,4 +405,8 @@
   <block id="ffbef04ea072f1887001d16556efc89e" category="summary">Commencez avec Azure NetApp Files en configurant une application Microsoft Entra et en créant un environnement de travail.</block>
   <block id="4825dc1eb26b7e7de707e1565fcb2692" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="ceb71631b57ba9aa78ded8805cd28ebf" category="inline-link-macro-rx"></block></block>
   <block id="0e63ec6ed03b6c3507b12798044de570" category="paragraph">Dans Azure, attribuez des autorisations à une application Microsoft Entra et copiez l'ID de l'application (client), l'ID du répertoire (locataire) et la valeur d'un secret client.</block>
+  <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">22 avril 2024</block>
+  <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="section-title">Les modèles de volume ne sont plus pris en charge</block>
+  <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">Vous ne pouvez plus créer de volume à partir d'un modèle. Cette action a été associée au service de correction BlueXP, qui n'est plus disponible.</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utilise Microsoft Entra ID comme fournisseur d'identité pour les services d'authentification spécifiques à la prise en charge et à l'octroi de licences.</block>
 </blocks>
