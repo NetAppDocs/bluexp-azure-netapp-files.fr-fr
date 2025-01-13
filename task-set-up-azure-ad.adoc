@@ -156,7 +156,7 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 *** ID de l'application (client)
 *** ID du répertoire (locataire)
 +
-Vous devez avoir saisi ces informations lorsque vous <<Create the AD application,Créé l'application AD>>.
+Vous devez avoir saisi ces informations lorsque vous <<create-AD-application,Créé l'application AD>>.
 
 
 
