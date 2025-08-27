@@ -51,7 +51,7 @@ Notez que votre abonnement et la facturation sont gérés par le service Azure N
 
 == Régions prises en charge
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Affichez les régions Azure prises en charge"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Affichez les régions Azure prises en charge"^]
 
 
 
@@ -63,7 +63,7 @@ Pour tout problème de support technique lié à Azure NetApp Files, utilisez le
 
 == Liens connexes
 
-* https://cloud.netapp.com/azure-netapp-files["Site web NetApp BlueXP : Azure NetApp Files"^]
-* https://docs.microsoft.com/azure/azure-netapp-files/["Documentation Azure NetApp Files"^]
-* https://docs.netapp.com/us-en/bluexp-copy-sync/index.html["Documentation sur la copie et la synchronisation BlueXP"^]
+* link:https://bluexp.netapp.com/azure-netapp-files["Site web NetApp BlueXP : Azure NetApp Files"^]
+* link:https://learn.microsoft.com/azure/azure-netapp-files/["Documentation Azure NetApp Files"^]
+* link:https://docs.netapp.com/us-en/bluexp-copy-sync/index.html["Documentation sur la copie et la synchronisation BlueXP"^]
 
